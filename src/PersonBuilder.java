@@ -39,7 +39,7 @@ public class PersonBuilder implements IPersonBuilder {
     }
 
     public boolean hasAge() {
-        if (OptionalInt.of(this.age) == null) {
+        if (this.age == 0) {
             return false;
         }
         return true;
