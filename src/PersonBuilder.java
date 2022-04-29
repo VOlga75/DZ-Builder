@@ -3,7 +3,7 @@ import java.util.OptionalInt;
 public class PersonBuilder implements IPersonBuilder {
     protected String name;
     protected String surname;
-    protected int age;
+    protected int age =-1;
     protected String adress;
 
     public PersonBuilder setName(String name) {
@@ -39,7 +39,7 @@ public class PersonBuilder implements IPersonBuilder {
     }
 
     public boolean hasAge() {
-        if (this.age == 0) {
+        if (this.age == -1) {
             return false;
         }
         return true;

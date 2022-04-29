@@ -33,7 +33,7 @@ public class Person {
     }
 
     public OptionalInt getAge() {
-        if (this.age <= 0){
+        if (this.age < 0){
             return OptionalInt.empty();
         }
         return OptionalInt.of(this.age);
